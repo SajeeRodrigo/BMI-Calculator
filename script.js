@@ -9,7 +9,7 @@ function calculate() {
     var height = parseInt(document.getElementById("height").value);
     document.getElementById("height-val").textContent = height + " cm";
 
-    bmi = (weight / ((height/100),2)).toFixed(1);
+    bmi = (weight / ((height*height/100),2)).toFixed(1);
 
     result.textContent = bmi;
 
